@@ -22,9 +22,7 @@ jobs:
         QCZJ_CASH: ${{ secrets.QCZJ_CASH }}
         QCZJ_CASHTIME: ${{ secrets.QCZJ_CASHTIME }}
     steps:
-      - name: Checkout
-        run: |
-          git clone https://github.com/ziye12/QCZJSPEED.git ~/QCZJSPEED
+      - name: actions/checkout@v1
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
