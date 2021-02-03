@@ -21,13 +21,11 @@ jobs:
         FL_CASH: ${{ secrets.FL_CASH }}//天天领现金提现
         FL_DHCASH: ${{ secrets.FL_DHCASH }}//签到活动兑换
     steps:
-      - name: Checkout
-        run: |
-          git clone https://github.com/ziye12/JavaScript.git ~/JavaScript
-      - name: Use Node.js 12.x
+      - uses: actions/checkout@v1
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: 14.x
       - name: npm install
         if: env.FL_flwURL
         run: |
