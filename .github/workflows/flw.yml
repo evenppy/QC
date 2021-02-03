@@ -29,7 +29,6 @@ jobs:
       - name: npm install
         if: env.FL_flwURL
         run: |
-          cd ~/JavaScript
           npm install
       - name: '运行 【返利网】'
         if: env.FL_flwURL
