@@ -34,7 +34,6 @@ jobs:
       - name: '运行 【返利网】'
         if: env.FL_flwURL
         run: |
-          cd ~/JavaScript
           node Task/flw.js
         env:
           
