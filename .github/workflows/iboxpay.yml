@@ -6,7 +6,7 @@ name: 笑谱
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/10 * * * *'
+     - cron: '*/15 8-23 * * *'
   watch:
     types: started
 jobs:
@@ -17,6 +17,7 @@ jobs:
         XP_iboxpayHEADER: ${{ secrets.XP_iboxpayHEADER }}
         XP_refreshTOKEN: ${{ secrets.XP_refreshTOKEN }}
         XP_CASH: ${{ secrets.XP_CASH }}
+        XP_live: ${{ secrets.XP_live }}
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js 14.x
