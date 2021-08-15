@@ -44,11 +44,7 @@ var DualKey = ''; //该参数已废弃; 仅用于下游脚本的兼容, 请使�
 
 var OtherKey = `[{
   "cookie": "pt_key=AAJhEeiKADAoi6alLJ26IQWKKxUUwHnXfLwuze6cGpzJkcyvqW03gPbHO2BXXKcc2KpdZ7c9j64;pt_pin=eyre%E7%82%9C;"
-}, {
-  "cookie": "pt_key=AAJhEemrADAramNf2AqBGYI10BwdKNLSq0EP5k9T5iwTxwSoISBhni7nmN0zI6391CtK6hPtIiQ;pt_pin=jd_HZKaipWtgSLs;",
-}], {
-  "cookie": "pt_key=AAJhEejcADD2zE-S8EEYfdrnRgiwTvRQTvd3dHoVVW_3BN0PRLCZFVrGDTGBY43of_x6My879JU;pt_pin=5%E6%AF%AB%E7%BA%B8%E9%9B%AA%E6%9D%A1;",
-}]`; //无限账号Cookie json串数据, 请严格按照json格式填写, 具体格式请看以下样例:、
+}]`//无限账号Cookie json串数据, 请严格按照json格式填写, 具体格式请看以下样例:、
 
 /*以下样例为双账号("cookie"为必须,其他可选), 第一个账号仅包含Cookie, 第二个账号包含Cookie和金融签到Body: 
 
